@@ -6,10 +6,10 @@ public class YRotate : MoveBase
 {
     public override void InitLocation()
     {
-        MoveObject.localRotation = Quaternion.Euler(MoveObject.localPosition.x, InitPosition, MoveObject.localPosition.z);
+        MoveObject.localRotation = Quaternion.Euler(MoveObject.localRotation.x, InitPosition, MoveObject.localRotation.z);
     }
     public override void UpdateModelPosition()
     {
-        MoveObject.localRotation = Quaternion.Euler(MoveObject.localPosition.x, NowPosition, MoveObject.localPosition.z);
+        MoveObject.localRotation = Quaternion.Euler(MoveObject.localRotation.x, NowPosition, MoveObject.localRotation.z);
     }
 }

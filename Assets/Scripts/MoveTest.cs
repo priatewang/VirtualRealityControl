@@ -20,7 +20,9 @@ public class MoveTest : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        pos++;
-        Move.SetDataPos(pos);
+        // pos++;
+        // Move.SetDataPos(pos);
+        RobotControl.DataAngles[0]++;
+        RobotControl.DataAngles[1]+=0.5f;
     }
 }
